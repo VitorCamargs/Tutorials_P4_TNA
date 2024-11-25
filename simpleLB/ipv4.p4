@@ -21,6 +21,7 @@
 
 
 /*TODO: define the necesssary metadata*/
+
 struct metadata_t {
     bit<32> output_lb;
 }
@@ -90,7 +91,7 @@ control SwitchIngressDeparser(
 
 /*TODO: register definition */
 
-Register<bit<32>,_>(1)lb_counter;
+Register<bit<32>, _>(1) lb_counter;
 
 control SwitchIngress(
         inout header_t hdr,
